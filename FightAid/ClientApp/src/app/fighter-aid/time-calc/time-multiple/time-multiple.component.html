@@ -1,0 +1,5 @@
+<div id="time-multiple-border" class="row col-sm-12">
+  <p id="multiple" class="col-sm-2">*{{multiple}}</p>
+  <label id="time" class="col-sm-8">{{timeString}}</label>
+  <button class="col-sm-2" *ngIf="timeString" (click)="addTimer()">Add</button>
+</div>

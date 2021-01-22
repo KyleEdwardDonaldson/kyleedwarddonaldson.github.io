@@ -1,0 +1,8 @@
+<div id="timer-border" class="row col-sm-12">
+  <input id="villageID" class="col-sm-2" />
+  <label id="time" class="col-sm-4">{{timeString}}</label>
+  <input id="villageID" class="col-sm-2" />
+  <button class="col-sm-2 offset-sm-1" *ngIf="timeString && !started" (click)="startTimer()">Start</button>
+  <button class="col-sm-2 offset-sm-1" *ngIf="timeString && started" (click)="stopTimer()">Stop</button>
+  <button class="col-sm-1" *ngIf="timeString" (click)="removeTimer()">x</button>
+</div>

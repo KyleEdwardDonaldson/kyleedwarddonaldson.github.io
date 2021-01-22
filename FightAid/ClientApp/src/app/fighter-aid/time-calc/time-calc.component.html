@@ -1,0 +1,20 @@
+<div class="row" id="time-calc-border">
+  <h2 class="row col-sm-12">Calculator</h2>
+  <div id="time-display" class="row col-sm-12">
+    <label id="time-label">Time</label>
+    <input id="time-input" (keyup)="updateTime($event.currentTarget.value)" [value]="timeString" />
+  </div>
+  <div class="row col-sm-12" id="addButtons">
+    <button (click)="addDay()">+1 Day</button>
+    <button (click)="addHour()">+1 Hour</button>
+    <button (click)="addMin()">+1 Min</button>
+    <button (click)="addSec()">+1 Sec</button>
+  </div>
+  <div id="time-multiples" class="row col-sm-12">
+    <time-multiple [multiple]="'1'" class="row col-sm-12"></time-multiple>
+    <time-multiple [multiple]="'2'" class="row col-sm-12"></time-multiple>
+    <time-multiple [multiple]="'3'" class="row col-sm-12"></time-multiple>
+    <time-multiple [multiple]="'4'" class="row col-sm-12"></time-multiple>
+    <time-multiple [multiple]="'5'" class="row col-sm-12"></time-multiple>
+  </div>
+</div>
